@@ -1,0 +1,340 @@
+
+// Myself
+CREATE Amade_= (Amade :LinkedIn_Account{First_Name: "Amade " ,Last_Name: " Abusomwan", Institution: "Technological University Of the Shannon", Position: " Student", Account_Created_Since:  " 05-05-2016 " })
+
+
+// Connections from my PostGraduate
+CREATE Clement_=(Clement:PostGrad_Connections{First_Name: " Clement" ,Last_Name: " Davies", Company: "Tata Consultancy Services ", Position: " IT Analyst", Connected_Year: 2022})-[: Connects_with{Connected_on: " 28-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Clement)
+CREATE Sufyan_=(Sufyan:PostGrad_Connections{First_Name: " Sufyan" ,Last_Name: "Taskin ", Company: " MoodMe", Position: " Data Scientist", Connected_Year: 2022})-[: Connects_with{Connected_on: " 28-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Sufyan)
+CREATE DamilolaAkinsola_= (DamilolaAkinsola:PostGrad_Connections{First_Name: "Damilola" ,Last_Name: "Akinsola ", Company: " Castletroy Park Hotel", Position: "Food And Beverage Assistant ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(DamilolaAkinsola)
+CREATE FrancesOranu_= (FrancesOranu:PostGrad_Connections{First_Name: " Frances" ,Last_Name: " Oranu", Company: " Atlantic Prosthetic Orthotic Services Ltd", Position: "Quality Assurance Specialist ", Connected_Year: 2022 })-[: Connects_with{Connected_on: "20-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(FrancesOranu)
+CREATE Gemma_= (Gemma:PostGrad_Connections{First_Name: "Gemma " ,Last_Name: " Hayes Assoc.CIPD", Company: "Technological University of the Shannon: Midlands Midwest ", Position: " Asistant Staff Officer - Careers and Employability", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 16-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Gemma)
+CREATE Chioma_= (Chioma:PostGrad_Connections{First_Name: " Chioma" ,Last_Name: "Okoye-Daley ", Company: " Technological University of the Shannon: Midlands Midwest", Position: "Regional Manager - Middle East & Africa ", Connected_Year: 2022})-[: Connects_with{Connected_on: " 27-02-2022"}]->(Amade),(Amade)-[: Connects_with]->(Chioma)
+CREATE Sai_ = (SaiSubhankar:PostGrad_Connections{First_Name: "Sai " ,Last_Name: "Subhankar ", Company: " Clarion Technologies", Position: "Data Analyst ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 27-02-2022"}]->(Amade),(Amade)-[: Connects_with]->(SaiSubhankar)
+CREATE Renan_ = (RenanRamos:PostGrad_Connections{First_Name: " RenanRamos" ,Last_Name: " Fioramonte ", Company: "Timeout Casino ", Position: " Cashier", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 27-02-2022"}]->(Amade),(Amade)-[: Connects_with]->(RenanRamos)
+CREATE Gopi_= (GopiManoj:PostGrad_Connections{First_Name: "Gopi Manoj " ,Last_Name: "Vuyyuru ", Company: "Tata Consultancy Services ", Position: " Assistant System Engineer", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 26-02-2022"}]->(Amade),(Amade)-[: Connects_with]->(GopiManoj)
+CREATE Vinicius_= (Vinicius:PostGrad_Connections{First_Name: "Vinicius " ,Last_Name: " Macedo", Company: " UOL - Universo Online", Position: " Project Development Manager", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 26-02-2022"}]->(Amade),(Amade)-[: Connects_with]->(Vinicius)
+CREATE Rohan_= (RohanTallapally:PostGrad_Connections{First_Name: "Rohan" ,Last_Name: " Tallapally ", Company: "Limerick Institute of Technology ", Position: "Student ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 26-02-2022"}]->(Amade), (Amade)-[: Connects_with]->(RohanTallapally)
+CREATE Boyowa_= (Boyowa:PostGrad_Connections{First_Name: "Boyowa " ,Last_Name: "Eresanara ", Company: "Upwork ", Position: " O365 Consultant | Cloud Engineer | Azure ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 26-02-2022"}]->(Amade),(Amade)-[: Connects_with]->(Boyowa)
+CREATE Ajulo_=  (Ajulo:PostGrad_Connections{First_Name: " Ajulo" ,Last_Name: " Joseph", Company: "TF-DEL Company Limited ", Position: "Human Resources Analyst ", Connected_Year: 2021})-[: Connects_with{Connected_on: " 31-12-2021"}]->(Amade),(Amade)-[: Connects_with]->(Ajulo)
+CREATE Jennifer_= (JenniferAigbugwili :PostGrad_Connections{First_Name: " Jennifer" ,Last_Name: "Aigbugwili  ", Company: " 3way Communications Limited", Position: "Information Technology Consultant ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 26-02-2022"}]->(Amade),(Amade)-[: Connects_with]->(JenniferAigbugwili )
+CREATE ChineduIkeme_ = (ChineduIkeme:PostGrad_Connections{First_Name: "Chinedu" ,Last_Name: "Ikeme  ", Company: "Elite source solutions ", Position: " Assistant Project Coordinator", Connected_Year: 2021 })-[: Connects_with{Connected_on: " 30-11-2021"}]->(Amade),(Amade)-[: Connects_with]->(ChineduIkeme)
+CREATE Nsikak_= (Nsikak:PostGrad_Connections{First_Name: "Nsikak " ,Last_Name: "Nyah ", Company: " DNCF Ltd", Position: " Graduate Quantity Surveyor", Connected_Year: 2021})-[: Connects_with{Connected_on: " 30-11-2021"}]->(Amade),(Amade)-[: Connects_with]->(Nsikak)
+CREATE EricOnobhayedo_ = (EricOnobhayedo:PostGrad_Connections{First_Name: " Eric" ,Last_Name: "Onobhayedo ", Company: "ACRA Interior Fitouts ", Position: "Quantity Surveyor ", Connected_Year: 2021 })-[: Connects_with{Connected_on: " 01-11-2021"}]->(Amade),(Amade)-[: Connects_with]->(EricOnobhayedo)
+CREATE BlessingOmoruyi_ = (BlessingOmoruyi:PostGrad_Connections{First_Name: "Blessing " ,Last_Name: "Omoruyi ", Company: "Currys plc ", Position: " Sales Assistant ", Connected_Year: 2021 })-[: Connects_with{Connected_on: " 31-10-2021"}]->(Amade),(Amade)-[: Connects_with]->(BlessingOmoruyi)
+CREATE AnochiliObinna_= (AnochiliObinna:PostGrad_Connections{First_Name: "Anochili " ,Last_Name: " Obinna", Company: "Octopus Synergy Ltd ", Position: " Project Architect 1", Connected_Year: 2021 })-[: Connects_with{Connected_on: " 29-10-2021"}]->(Amade),(Amade)-[: Connects_with]->(AnochiliObinna)
+CREATE Joanne_= (Joanne:PostGrad_Connections{First_Name: " Joanne" ,Last_Name: "Holland ", Company: " Technological University of the Shannon: Midlands Midwest", Position: " Careers Officer", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 25-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Joanne)
+CREATE TUS_= (TUSCareer:PostGrad_Connections{First_Name: "TUS - Mid West " ,Last_Name: " Careers and Employability", Company: " Limerick Institute of Technology", Position: "Marketing Coordinator ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 28-02-2022"}]->(Amade),(Amade)-[: Connects_with]->(TUSCareer)
+
+
+// Connections from my Undergraduate
+CREATE Ik_= (Ik:UnderGrad_Connections{First_Name: "Ik " ,Last_Name: " David_Imohe", Company: "LAPO Microfinance ", Position: "Corporate Planning Officer ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 29-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Ik)
+CREATE Babatunde_= (Babatunde:UnderGrad_Connections{First_Name: " Babatunde" ,Last_Name: "Ajijala ACA ", Company: "Skretting ", Position: "Commercial Finance Manager ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 27-02-2022"}]->(Amade),(Amade)-[: Connects_with]->(Babatunde)
+CREATE DaisyOsamede_= (DaisyOsamede:UnderGrad_Connections{First_Name: " Daisy Osamede" ,Last_Name: " Igbinoba", Company: " Gyspy Capital Limited", Position: " Legal Consultant", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 06-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(DaisyOsamede)
+CREATE NosakhareUgiagbe_= (NosakhareUgiagbe:UnderGrad_Connections{First_Name: "Nosakhare " ,Last_Name: " Ugiagbe", Company: "EY ", Position: "Manager - M&A / Strategy and Transactions ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 04-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(NosakhareUgiagbe)
+CREATE AchimeAfamefuna_= (AchimeAfamefuna:UnderGrad_Connections{First_Name: "Achime" ,Last_Name: "Afamefuna  ", Company: "Coventry University ", Position: " Student Assistant", Connected_Year: 2022})-[: Connects_with{Connected_on: " 27-02-2022"}]->(Amade),(Amade)-[: Connects_with]->(AchimeAfamefuna)
+CREATE Martins_=  (MartinsAkpughe:UnderGrad_Connections{First_Name: "MartinsAkpughe " ,Last_Name: " Emamowho", Company: "Cassava ", Position: " Project Executive", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 27-02-2022"}]->(Amade),(Amade)-[: Connects_with]->(MartinsAkpughe)
+CREATE SEGUNAWOMA_ = (SEGUNAWOMA:UnderGrad_Connections{First_Name: "SEGUN" ,Last_Name: " AWOMA ", Company: "Nigerbev Limited ", Position: " Procurement Data Analyst", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 26-02-2022"}]->(Amade),(Amade)-[: Connects_with]->(SEGUNAWOMA)
+CREATE Omigie_=  (Omigie:UnderGrad_Connections{First_Name: "Omigie " ,Last_Name: "Osazemen Susan ", Company: "Zenith Bank Plc ", Position: "Graduate Assistant ", Connected_Year: 2022})-[: Connects_with{Connected_on: " 26-02-2022"}]->(Amade),(Amade)-[: Connects_with]->(Omigie)	
+CREATE CollinsEnofe_= (CollinsEnofe:UnderGrad_Connections{First_Name: "Collins " ,Last_Name: " Enofe", Company: " Amazon Web Services (AWS)", Position: "Decom Data Center Ops ", Connected_Year: 2022})-[: Connects_with{Connected_on: " 25-02-2022"}]->(Amade),(Amade)-[: Connects_with]->(CollinsEnofe)
+CREATE VictorOnwuzor_= (VictorOnwuzor:UnderGrad_Connections{First_Name: "Victor " ,Last_Name: " Onwuzor", Company: "Construyo ", Position: " Software Engineer", Connected_Year: 2021 })-[: Connects_with{Connected_on: " 09-11-2021"}]->(Amade),(Amade)-[: Connects_with]->(VictorOnwuzor)
+CREATE FrankOgbeide_= (FrankOgbeide:UnderGrad_Connections{First_Name: " Frank" ,Last_Name: "Ogbeide, PhD ", Company: "University of Benin, Benin City. ", Position: " Lecturing", Connected_Year: 2021})-[: Connects_with{Connected_on: " 22-10-2021"}]->(Amade),(Amade)-[: Connects_with]->(FrankOgbeide)
+CREATE ObasiFrancis_= (ObasiFrancis:UnderGrad_Connections{First_Name: "ObasiFrancis " ,Last_Name: " Ifegwu", Company: " Cassava", Position: "Co-founder & Chief Executive Officer ", Connected_Year: 2021 })-[: Connects_with{Connected_on: " 20-10-2021"}]->(Amade),(Amade)-[: Connects_with]->(ObasiFrancis)
+CREATE Awele_ =(AweleDibie:UnderGrad_Connections{First_Name: "Awele" ,Last_Name: "Dibie  ", Company: "UBA Group ", Position: "Team Member, Card Dispute Processing, E-Business Operations ", Connected_Year: 2021 })-[: Connects_with{Connected_on: " 19-10-2021"}]->(Amade),(Amade)-[: Connects_with]->(AweleDibie)
+CREATE Experience_= (Experience:UnderGrad_Connections{First_Name: " Experience" ,Last_Name: " Akhigbe", Company: "PwC ", Position: " Senior Consultant, Infrastructure Advisory and Project Finance", Connected_Year: 2021 })-[: Connects_with{Connected_on: " 18-10-2021"}]->(Amade),(Amade)-[: Connects_with]->(Experience)
+CREATE Daniella_= (DaniellaBraie:UnderGrad_Connections{First_Name: "Daniella " ,Last_Name: " Braie", Company: "Nabro Holdings LLC ", Position: " Virtual Assistant", Connected_Year: 2021 })-[: Connects_with{Connected_on: " 18-10-2021"}]->(Amade),(Amade)-[: Connects_with]->(DaniellaBraie)
+CREATE VictorMekwunye_= (VictorMekwunye:UnderGrad_Connections{First_Name: "Victor " ,Last_Name: "Mekwunye , ACA", Company: " UBA Group", Position: " Payment system and Enterprise applications Specialist", Connected_Year: 2017 })-[: Connects_with{Connected_on: "07-07-2017"}]->(Amade),(Amade)-[: Connects_with]->(VictorMekwunye)
+CREATE George_= (GeorgeAdoghe:UnderGrad_Connections{First_Name: "George " ,Last_Name: " Adoghe", Company: "Prescient ", Position: " Analyst - Compliance/Due Diligence", Connected_Year: 2017 })-[: Connects_with{Connected_on: " 02-02-2017"}]->(Amade),(Amade)-[: Connects_with]->(GeorgeAdoghe)
+CREATE IfeanyiOlabode_= (IfeanyiOlabode:UnderGrad_Connections{First_Name: " Ifeanyi Olabode " ,Last_Name: "IKEOMUMU ", Company: "Access Bank Plc ", Position: " Branch Service Manager", Connected_Year: 2016 })-[: Connects_with{Connected_on: " 08-12-2016"}]->(Amade),(Amade)-[: Connects_with]->(IfeanyiOlabode)			
+CREATE PaulaAjayi_= (PaulaAjayi :UnderGrad_Connections{First_Name: "Paula " ,Last_Name: " Ajayi ", Company: "Deloitte ", Position: " Audit Senior", Connected_Year: 2016 })-[: Connects_with{Connected_on: " 08-12-2016"}]->(Amade),(Amade)-[: Connects_with]->(PaulaAjayi )	
+CREATE EstherChinonso_= (EstherChinonso:UnderGrad_Connections{First_Name: "Esther Chinonso " ,Last_Name: "Uchegbu ", Company: "Deloitte ", Position: "Semi Senior Associate ", Connected_Year: 2016 })-[: Connects_with{Connected_on: " 16-05-2016"}]->(Amade),(Amade)-[: Connects_with]->(EstherChinonso)			
+CREATE Tina_= (OsariemenTina:UnderGrad_Connections{First_Name: "Osariemen Tina " ,Last_Name: "Ojo ", Company: " Anheuser-Busch InBev", Position: "Route-to-Market Manager ", Connected_Year: 2016 })-[: Connects_with{Connected_on: " 05-05-2016"}]->(Amade),(Amade)-[: Connects_with]->(OsariemenTina)	
+CREATE Aaron_= (Aaron:UnderGrad_Connections{First_Name: " Aaron" ,Last_Name: "Hurley PhD ", Company: " gather360", Position: "Data Architect ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 07-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(Aaron)
+CREATE Jessie_= (Jessie:UnderGrad_Connections{First_Name: "Jessie " ,Last_Name: "Agwu, ACA ", Company: "IKOYI CLUB I938 ", Position: "Account Supervisor ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 07-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(Jessie)
+CREATE Opeyemi_=(Opeyemi:UnderGrad_Connections{First_Name: " Opeyemi" ,Last_Name: " Akingbohungbe", Company: "Side Hustle ", Position: " data analyst Intern", Connected_Year: 2022  }) -[: Connects_with{Connected_on: " 11-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(Opeyemi)
+				
+//Others 
+CREATE ADEBISI_= (ADEBISI:Other_Connections{First_Name: " ADEBISI " ,Last_Name: " OATUNBOSUN", Company: " Olaaa property & Co ", Position: " Real Estate Agent ", Connected_Year: 2022 }) -[: Connects_with{Connected_on: " 11-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(ADEBISI)
+CREATE Jay_=(Jay:Other_Connections{First_Name: " Jay" ,Last_Name: " Dave", Company: "Imagine Networks Services Ltd ", Position: " Data Analyst", Connected_Year: 2022 }) -[: Connects_with{Connected_on: " 08-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(Jay)
+ CREATE Leena_ = (Leena:Other_Connections{First_Name: " Leena" ,Last_Name: " Thomas", Company: "Capita ", Position: "Customer Service Representative ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 08-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(Leena)
+CREATE James_ =(James:Other_Connections{First_Name: "James " ,Last_Name: " Carter", Company: "Vodafone ", Position: "Data Analyst - Margin Assurance ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 08-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(James)
+CREATE Derek_ = (Derek:Other_Connections {First_Name: " Derek" ,Last_Name: " McCormack", Company: "e-Frontiers ", Position: "Principal Recruiter ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 07-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(Derek)
+CREATE Christopher_= (Christopher:Other_Connections{First_Name: "Christopher " ,Last_Name: "Wynne ", Company: " FRS Recruitment", Position: "IT Recruitment Consultant  ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 07-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(Christopher)
+CREATE Svetlana_ =(Svetlana:Other_Connections{First_Name: " Svetlana" ,Last_Name: "Lupascu ", Company: " Bristol Myers Squibb", Position: " Document Controller", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 06-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(Svetlana)
+CREATE Suhani_ =(Suhani:Other_Connections{First_Name: " Suhani" ,Last_Name: "Singh ", Company: "Accenture ", Position: "Data Science Consultant ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 06-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(Suhani)
+CREATE Shreesh_ =(Shreesh:Other_Connections{First_Name: " Shreesh" ,Last_Name: " Sambhare", Company: "Infosys BPM ", Position: " Process Executive CSR", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 06-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(Shreesh)
+CREATE Ximena_ =(Ximena:Other_Connections{First_Name: "Ximena " ,Last_Name: " Bergara Gutierrez", Company: "Amazon ", Position: "TA Candidate Partner/Recruiter - UK & Ireland ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 05-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(Ximena)
+CREATE Odeh_= (Odeh:Other_Connections{First_Name: "Odeh " ,Last_Name: "Vincent ", Company: "Mersus Technologies ", Position: " Web Developer", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 05-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(Odeh)
+CREATE  Ruchita_ = (Ruchita:Other_Connections{First_Name: " Ruchita" ,Last_Name: "Patil ", Company: "Wurth Ireland Ltd ", Position: "Pricing Analyst ", Connected_Year: 2022})-[: Connects_with{Connected_on: " 04-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(Ruchita)
+CREATE Ava_= (Ava:Other_Connections{First_Name: "Ava " ,Last_Name: "Finnegan ", Company: "Accenture ", Position: " Data Engineering Analyst", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 04-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(Ava)
+CREATE Manisha_= (Manisha:Other_Connections{First_Name: "Manisha " ,Last_Name: "M", Company: " DXC Technology", Position: "Associate Data Analyst ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 03-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(Manisha)
+CREATE ChristyJoyner_= (ChristyJoyner:Other_Connections{First_Name: "ChristyJoyner " ,Last_Name: " Capulong", Company: "Temeneco Inc. ", Position: "Senior Team Leader ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 01-04-2022"}]->(Amade),(Amade)-[: Connects_with]->(ChristyJoyner)
+CREATE Chitralekha_=(Chitralekha:Other_Connections{First_Name: "Chitralekha " ,Last_Name: "Hsn ", Company: "Girnar Care ", Position: "Customer Support Executive ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 31-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Chitralekha)
+CREATE Laoise_= (Laoise:Other_Connections{First_Name: "Laoise " ,Last_Name: "Coughlan ", Company: "Accenture ", Position: "Data Science Analyst ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 31-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Laoise)
+CREATE Nihal_=(Nihal:Other_Connections{First_Name: " Nihal" ,Last_Name: " Assal", Company: " Amazon", Position: "Recruiter ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 31-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Nihal)
+CREATE JerryAvura_=(JerryAvura:Other_Connections{First_Name: " Jerry_Avura" ,Last_Name: "U ", Company: " Abtran", Position: " Real Time Analyst", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 30-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(JerryAvura)
+CREATE Victoria_= (Victoria:Other_Connections{First_Name: " Victoria" ,Last_Name: "Cojocaru ", Company: " GemPool Recruitment", Position: " IT Recruitment Consultant", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 30-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Victoria)
+CREATE Kara_=(Kara:Other_Connections{First_Name: "Kara " ,Last_Name: "Lynch ", Company: "Google ", Position: "Recruiter ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 30-03-2022" }]->(Amade),(Amade)-[: Connects_with]->(Kara)
+CREATE Arnab_=(Arnab:Other_Connections{First_Name: " Arnab" ,Last_Name: "Gupta ", Company: "Version 1@Facebook ", Position: " Data Analyst", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 30-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Arnab)
+CREATE Aidan_=(Aidan:Other_Connections{First_Name: " Aidan" ,Last_Name: "O'Rourke ", Company: " Cloudera", Position: "Senior Business Systems Analyst ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 30-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Aidan)
+CREATE Sinead_ = (Sinead:Other_Connections{First_Name: "Sinead " ,Last_Name: "Nolan ", Company: "BAM Ireland ", Position: "Recruiter ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 28-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Sinead)
+CREATE Gary_=(Gary:Other_Connections{First_Name: " Gary" ,Last_Name: "Morrison ", Company: " DocuSign", Position: " EMEA Recruiter", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 28-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Gary)
+CREATE Bayo_= (Bayo:Other_Connections{First_Name: " Bayo" ,Last_Name: "Toriola ", Company: "National College of Ireland ", Position: "Teaching Assistant ", Connected_Year: 2022 })-[: Connects_with{Connected_on: "26-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Bayo)
+CREATE Chienwei_=(Chienwei:Other_Connections{First_Name: "Chienwei " ,Last_Name: "Chuang ", Company: "I-Planet International Co., Ltd. ", Position: "Data Analyst ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 26-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Chienwei)
+CREATE Gonzalo_= (Gonzalo:Other_Connections{First_Name: "Gonzalo " ,Last_Name: " de Castro Escoba", Company: "TikTok ", Position: " Quality Analyst", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 25-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Gonzalo)
+CREATE Priyanka_=(Priyanka:Other_Connections{First_Name: " Priyanka" ,Last_Name: "Bahal ", Company: " Fargo Line", Position: " Sales And Marketing Intern", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 25-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Priyanka)
+CREATE Mark_=(Mark:Other_Connections{First_Name: " Mark" ,Last_Name: "Kennedy ", Company: " EY", Position: "Data & AI Scientist ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 25-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Mark)
+CREATE Gregorio_=(Gregorio:Other_Connections{First_Name: "Gregorio " ,Last_Name: "  de la Santa Cruz", Company: "TikTok ", Position: " Quality Analyst ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 25-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Gregorio)
+CREATE Cherish_=(Cherish:Other_Connections{First_Name: "Cherish " ,Last_Name: "Okonta ", Company: "SafeBoda ", Position: "Senior Finance Associate ", Connected_Year: 2022})-[: Connects_with{Connected_on: " 25-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Cherish)
+CREATE Fadeel_=(Fadeel:Other_Connections{First_Name: "Fadeel " ,Last_Name: "Gbaiye ", Company: "Dublin City University ", Position: " Data Analyst", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 25-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Fadeel)
+CREATE Carolina_= (Carolina:Other_Connections{First_Name: " Carolina" ,Last_Name: " Rhoden Freitas", Company: "  AIB ", Position: "Data Analyst ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Carolina)
+CREATE Rajkumar_=(Rajkumar:Other_Connections{First_Name: "Rajkumar " ,Last_Name: " Iyyaswamy Srinivasan", Company: " Nova Leah", Position: " Machine Learning Data Analyst", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Rajkumar)					
+CREATE maryqueen_=(maryqueen:Other_Connections{First_Name: "Mary_queen " ,Last_Name: " duray", Company: " Temene", Position: " data researcher", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(maryqueen)
+CREATE Cormac_= (Cormac:Other_Connections{First_Name: "Cormac " ,Last_Name: "Butler ", Company: "EY ", Position: " Junior Data Scientist", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Cormac)
+CREATE Wayne_=(Wayne:Other_Connections{First_Name: " Wayne" ,Last_Name: " Kinsella", Company: "Realtime Recruitment ", Position: "Recruitment Consultant ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Wayne)						
+CREATE Sodiq_= (Sodiq:Other_Connections{First_Name: "Sodiq " ,Last_Name: "Kasumu  ", Company: "MTN Nigeria ", Position: "Data Analyst - Revenue Assurance and Fraud Management ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Sodiq)					
+CREATE SarahMcCartan_= (SarahMcCartan:Other_Connections{First_Name: " SarahMcCartan" ,Last_Name: "McCartan ", Company: " CitySwift", Position: "Head of Insights ", Connected_Year: 2022})-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(SarahMcCartan)
+CREATE DanielStoica_= (DanielStoica:Other_Connections{First_Name: "DanielStoica " ,Last_Name: "Eddie", Company: "Rockets-City Diner ", Position: " Area Manager", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(DanielStoica)
+CREATE Kayoum_= (Kayoum:Other_Connections{First_Name: "Kayoum " ,Last_Name: "Khbuli ", Company: " Pfizer", Position: "Stability Data Analyst ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Kayoum)
+CREATE Darren_= (Darren:Other_Connections{First_Name: " Darren" ,Last_Name: "O' Donoghue ", Company: "TikTok ", Position: " Data Scientist", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Darren)
+CREATE Rory_= (Rory:Other_Connections{First_Name: "Rory " ,Last_Name: "Murphy ", Company: " Munich Re Automation Solutions Ltd", Position: " Data Scientist", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Rory)
+CREATE Valerijan_= (Valerijan:Other_Connections{First_Name: " Valerijan" ,Last_Name: "Lazic ", Company: " Apple", Position: " Data Analyst AI/ML", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Valerijan)
+CREATE MichaelWalsh_= (MichaelWalsh:Other_Connections{First_Name: "MichaelWalsh " ,Last_Name: "Walsh ", Company: " Verizon Connect", Position: " Business Intelligence Engineer", Connected_Year: 2022})-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(MichaelWalsh)
+CREATE ShanePercival_= (ShanePercival:Other_Connections{First_Name: " ShanePercival" ,Last_Name: "Percival ", Company: " Accenture", Position: "Data Analyst ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(ShanePercival)
+CREATE BarrySheridan_= (BarrySheridan:Other_Connections{First_Name: "BarrySheridan " ,Last_Name: " Sheridan", Company: " SIRO", Position: " Data Analyst", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(BarrySheridan)
+CREATE Anushka_= (Anushka:Other_Connections{First_Name: "Anushka " ,Last_Name: "Mitra Das ", Company: "Alkermes ", Position: " Business Intelligence Analyst", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Anushka)
+CREATE Kartik_= (Kartik:Other_Connections{First_Name: " Kartik" ,Last_Name: " Sharma", Company: " EY", Position: "Assistant Data Analyst ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Kartik)
+CREATE Digant_ = (Digant:Other_Connections{First_Name: " Digant" ,Last_Name: "Kumar ", Company: "Abbott ", Position: " Data Scientist", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Digant)
+CREATE Kristin_= (Kristin:Other_Connections{First_Name: " Kristin" ,Last_Name: "Ryan ", Company: "Square ", Position: "Business Recruiter ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 24-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Kristin)
+CREATE Elis_= (Elis:Other_Connections{First_Name: "Elis " ,Last_Name: "Giangareli ", Company: "Indeed.com ", Position: "Business Recruiter, EMEA Talent Attraction ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 23-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Elis)
+CREATE Evin_= (Evin:Other_Connections{First_Name: "Evin " ,Last_Name: " Scully", Company: "Takeda ", Position: "Data Scientist ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 23-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Evin)
+CREATE Tobe_= (Tobe:Other_Connections{First_Name: "Tobe " ,Last_Name: "Ezeife ", Company: " Microsoft", Position: "Senior BI and Data Engineer ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 22-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Tobe)
+CREATE Egehan_= (Egehan:Other_Connections{First_Name: " Egehan" ,Last_Name: " Gunduz", Company: "CKDelta ", Position: " Data Scientist", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 22-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Egehan)
+CREATE Ciara_= (Ciara:Other_Connections{First_Name: " Ciara" ,Last_Name: "McAuley ", Company: "Patreon ", Position: " Data Scientist", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 22-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Ciara)
+CREATE Marina_= (Marina:Other_Connections{First_Name: "Marina " ,Last_Name: " Pilar", Company: " Accenture", Position: " Recruiter", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 22-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Marina)
+CREATE Pinkal_= (Pinkal:Other_Connections{First_Name: "Pinkal " ,Last_Name: " Prajapati", Company: "IBM ", Position: "Data Scientist ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 22-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Pinkal)
+CREATE LouiseOKane_= (LouiseOKane:Other_Connections{First_Name: " Louise" ,Last_Name: " O'Kane", Company: " Intercom", Position: "Recruiter ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 22-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(LouiseOKane)
+CREATE LouiseThornton_= (LouiseThornton :Other_Connections{First_Name: " LouiseThornton " ,Last_Name: " Thornton ", Company: " Stripe", Position: " Business Recruiter", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 22-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(LouiseThornton )
+CREATE Shruti_= (Shruti:Other_Connections{First_Name: "Shruti " ,Last_Name: "Goswami	 ", Company: "Accenture ", Position: " Test Engineering Senior Analyst", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 22-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(Shruti)
+CREATE GavinKenny_= (GavinKenny:Other_Connections{First_Name: "Gavin" ,Last_Name: "Kenny ", Company: "Meta ", Position: "EMEA Recruiter - Leadership ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 22-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(GavinKenny)
+CREATE CaraVolkheimer_= (CaraVolkheimer:Other_Connections{First_Name: "Cara" ,Last_Name: " Volkheimer ", Company: " Indeed.com", Position: " Recruiter", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 22-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(CaraVolkheimer)
+CREATE AmandaMannix_=(AmandaMannix:Other_Connections{First_Name: " Amanda" ,Last_Name: " Mannix", Company: "PayPal ", Position: " Senior Recruitment Consultant", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 22-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(AmandaMannix)
+CREATE EllaSludds_= (EllaSludds:Other_Connections{First_Name: "Ella " ,Last_Name: "Sludds ", Company: " DocuSign", Position: "EMEA Recruiter ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 22-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(EllaSludds)
+CREATE JoyOmoragbon_=(JoyOmoragbon:Other_Connections{First_Name: " Joy" ,Last_Name: "Omoragbon ", Company: "KEYSTONE BANK LTD ", Position: " Account Officer", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 22-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(JoyOmoragbon)
+CREATE IvanGleasure_=(IvanGleasure:Other_Connections{First_Name: " Ivan" ,Last_Name: "Gleasure ", Company: "Indeed.com ", Position: " Business Recruiter & Talent Attraction", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 21-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(IvanGleasure)
+CREATE ShaneNoonan_=(ShaneNoonan:Other_Connections{First_Name: " ShaneNoonan" ,Last_Name: "Noonan ", Company: "Google ", Position: " Cloud Recruiter EMEA", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 21-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(ShaneNoonan)
+CREATE CiaraMcCabe_=(CiaraMcCabe:Other_Connections{First_Name: " CiaraMcCabe" ,Last_Name: "McCabe ", Company: "PwC ", Position: "Experienced Hire Recruiter ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 21-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(CiaraMcCabe)
+CREATE VineetRana_=(VineetRana:Other_Connections{First_Name: "Vineet " ,Last_Name: "Rana ", Company: " UCC Academy", Position: " Business Intelligence Analyst", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 21-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(VineetRana)
+CREATE JasonNorval_= (JasonNorval:Other_Connections{First_Name: " Jason" ,Last_Name: "Norval ", Company: " Scurri", Position: "In-House Recruiter ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 21-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(JasonNorval)
+CREATE SamiraLare_=(SamiraLare:Other_Connections{First_Name: " Samira" ,Last_Name: "Lare ", Company: "Google ", Position: "Recruiter, Google Cloud ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 21-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(SamiraLare)
+CREATE LornaMooney_= (LornaMooney:Other_Connections{First_Name: "Lorna " ,Last_Name: " Mooney", Company: " HubSpot", Position: " Recruiter", Connected_Year: 2022})-[: Connects_with{Connected_on: " 21-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(LornaMooney)
+CREATE DermotCadogan_= (DermotCadogan:Other_Connections{First_Name: " Dermot" ,Last_Name: "Cadogan ", Company: "Presidio Europe ", Position: " Recruiter", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 21-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(DermotCadogan)
+CREATE JovanniNielsen_= (JovanniNielsen:Other_Connections{First_Name: "Jovanni " ,Last_Name: " Nielsen", Company: "Self Employed ", Position: "Recruiter ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 20-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(JovanniNielsen)
+CREATE BrendanBracken_= (BrendanBracken:Other_Connections{First_Name: " Brendan" ,Last_Name: "Bracken ", Company: "Meta ", Position: "Data Science Recruiter ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 20-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(BrendanBracken)
+CREATE RebeccaLedden_ = (RebeccaLedden:Other_Connections{First_Name: "Rebecca " ,Last_Name: "Ledden ", Company: "Amazon Web Services (AWS) ", Position: "R4R Recruiter - EMEA  ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 20-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(RebeccaLedden)
+CREATE NikolinaErceg_= (NikolinaErceg:Other_Connections{First_Name: "Nikolina " ,Last_Name: "Erceg ", Company: " Accenture", Position: "Junior PST Analyst", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 20-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(NikolinaErceg)
+CREATE ViktoriiaBorysenko_= (ViktoriiaBorysenko:Other_Connections{First_Name: " Viktoriia" ,Last_Name: " Borysenko", Company: "Sii Poland ", Position: " Data management specialist", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 20-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(ViktoriiaBorysenko)
+CREATE SarahDavies_= (SarahDavies:Other_Connections{First_Name: " Sarah" ,Last_Name: "Davies ", Company: " EY", Position: "Senior Data Analyst ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 20-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(SarahDavies)
+CREATE DonnachaRyan_= (DonnachaRyan:Other_Connections{First_Name: "Donnacha " ,Last_Name: "Ryan ", Company: " EY", Position: "Data Analyst ", Connected_Year: 2022 })-[: Connects_with{Connected_on: "19-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(DonnachaRyan)
+CREATE AlanHealy_= (AlanHealy:Other_Connections{First_Name: "Alan " ,Last_Name: " Healy", Company: " Google", Position: "EMEA Recruiter - DACH Markets ", Connected_Year: 2022})-[: Connects_with{Connected_on: " 19-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(AlanHealy)
+CREATE BrianFeeney_= (BrianFeeney:Other_Connections{First_Name: "Brian " ,Last_Name: " Feeney", Company: "Servisource Recruitment ", Position: " Consultant ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 19-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(BrianFeeney)
+CREATE KanishkaSingh_= (KanishkaSingh:Other_Connections{First_Name: "Kanishka " ,Last_Name: " Singh", Company: "Amazon ", Position: "Recruiter ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 20-03-2022"}]->(Amade),(Amade)-[: Connects_with]->(KanishkaSingh)
+CREATE Iretioluwa_= (Iretioluwa:Other_Connections{First_Name: "Iretioluwa " ,Last_Name: "Akerele ", Company: " Xclaim Labs", Position: " Information Security Manager/Lead Consultant", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 27-02-2022"}]->(Amade),(Amade)-[: Connects_with]->(Iretioluwa)
+CREATE RaymondObayagbona_ = (RaymondObayagbona:Other_Connections{First_Name: "Raymond" ,Last_Name: " Obayagbona ", Company: "Bright Network ", Position: "Commercial Law Intern ", Connected_Year: 2022 })-[: Connects_with{Connected_on: " 26-02-2022"}]->(Amade),(Amade)-[: Connects_with]->(RaymondObayagbona)
+
+
+// Connections from TUS 
+CREATE 
+(RohanTallapally)-[:Shared_Connections]->(Vinicius),(RohanTallapally)-[:Shared_Connections]->(Boyowa),
+(RohanTallapally)-[:Shared_Connections]->(Clement),(RohanTallapally)-[:Shared_Connections]->(RenanRamos),
+(RohanTallapally)-[:Shared_Connections]->(GopiManoj),(RohanTallapally)-[:Shared_Connections]->(Sufyan),
+(RohanTallapally)-[:Shared_Connections]->(Shreesh),(RohanTallapally)-[:Shared_Connections]->(Ajulo),
+(RohanTallapally)-[:Shared_Connections]->(SaiSubhankar)
+
+CREATE 
+(SaiSubhankar)-[:Shared_Connections]->(SarahDavies),(SaiSubhankar)-[:Shared_Connections]->(Rory),
+(SaiSubhankar)-[:Shared_Connections]->(Clement),(SaiSubhankar)-[:Shared_Connections]->(RenanRamos),
+(SaiSubhankar)-[:Shared_Connections]->(RohanTallapally), (SaiSubhankar)-[:Shared_Connections]->(Boyowa),
+(SaiSubhankar)-[:Shared_Connections]->(Mark),(SaiSubhankar)-[:Shared_Connections]->(Sufyan),
+(SaiSubhankar)-[:Shared_Connections]->(DanielStoica),(SaiSubhankar)-[:Shared_Connections]->(GopiManoj),
+(SaiSubhankar)-[:Shared_Connections]->(Chitralekha),(SaiSubhankar)-[:Shared_Connections]->(JenniferAigbugwili),
+(SaiSubhankar)-[:Shared_Connections]->(Svetlana),(SaiSubhankar)-[:Shared_Connections]->(BrianFeeney)
+
+CREATE 
+(Vinicius)-[:Shared_Connections]->(RenanRamos),(Vinicius)-[:Shared_Connections]->(Boyowa),
+(Vinicius)-[:Shared_Connections]->(RohanTallapally),(Vinicius)-[:Shared_Connections]->(Sufyan),
+(Vinicius)-[:Shared_Connections]->(GopiManoj),(Vinicius)-[:Shared_Connections]->(Ajulo),
+(Vinicius)-[:Shared_Connections]->(JenniferAigbugwili)
+
+CREATE 
+(Boyowa)-[:Shared_Connections]->(Vinicius),(Boyowa)-[:Shared_Connections]->(Clement),
+(Boyowa)-[:Shared_Connections]->(RenanRamos),(Boyowa)-[:Shared_Connections]->(EricOnobhayedo),
+(Boyowa)-[:Shared_Connections]->(RohanTallapally),(Boyowa)-[:Shared_Connections]->(Sufyan),
+(Boyowa)-[:Shared_Connections]->(GopiManoj),(Boyowa)-[:Shared_Connections]->(SaiSubhankar),
+(Boyowa)-[:Shared_Connections]->(Ajulo)
+
+CREATE 
+(RenanRamos)-[:Shared_Connections]->(Vinicius),(RenanRamos)-[:Shared_Connections]->(Boyowa),
+(RenanRamos)-[:Shared_Connections]->(Clement),(RenanRamos)-[:Shared_Connections]->(RohanTallapally),
+(RenanRamos)-[:Shared_Connections]->(Sufyan),(RenanRamos)-[:Shared_Connections]->(GopiManoj),
+(RenanRamos)-[:Shared_Connections]->(SaiSubhankar),(RenanRamos)-[:Shared_Connections]->(Ajulo)
+
+CREATE 
+(Sufyan)-[:Shared_Connections]->(Vinicius),(Sufyan)-[:Shared_Connections]->(Boyowa),
+(Sufyan)-[:Shared_Connections]->(RenanRamos),(Sufyan)-[:Shared_Connections]->(Clement),
+(Sufyan)-[:Shared_Connections]->(RohanTallapally),(Sufyan)-[:Shared_Connections]->(Wayne),
+(Sufyan)-[:Shared_Connections]->(GopiManoj),(Sufyan)-[:Shared_Connections]->(SaiSubhankar),
+(Sufyan)-[:Shared_Connections]->(Ajulo)
+
+CREATE 
+(GopiManoj)-[:Shared_Connections]->(Vinicius),(GopiManoj)-[:Shared_Connections]->(ChineduIkeme),
+(GopiManoj)-[:Shared_Connections]->(Boyowa),(GopiManoj)-[:Shared_Connections]->(Clement),
+(GopiManoj)-[:Shared_Connections]->(RenanRamos),(GopiManoj)-[:Shared_Connections]->(RohanTallapally),
+(GopiManoj)-[:Shared_Connections]->(Shreesh),(GopiManoj)-[:Shared_Connections]->(Sufyan)
+
+
+CREATE 
+(Ajulo)-[:Shared_Connections]->(Vinicius),(Ajulo)-[:Shared_Connections]->(DonnachaRyan),
+(Ajulo)-[:Shared_Connections]->(ChineduIkeme),(Ajulo)-[:Shared_Connections]->(Odeh),
+(Ajulo)-[:Shared_Connections]->(Boyowa),(Ajulo)-[:Shared_Connections]->(EricOnobhayedo),
+(Ajulo)-[:Shared_Connections]->(FrancesOranu),(Ajulo)-[:Shared_Connections]->(Nsikak),
+(Ajulo)-[:Shared_Connections]->(Clement),(Ajulo)-[:Shared_Connections]->(RenanRamos),
+(Ajulo)-[:Shared_Connections]->(RohanTallapally),(Ajulo)-[:Shared_Connections]->(Sufyan),
+(Ajulo)-[:Shared_Connections]->(Leena),(Ajulo)-[:Shared_Connections]->(GopiManoj),
+(Ajulo)-[:Shared_Connections]->(Shreesh),(Ajulo)-[:Shared_Connections]->(Chienwei),
+(Ajulo)-[:Shared_Connections]->(TUS),(Ajulo)-[:Shared_Connections]->(JenniferAigbugwili),
+(Ajulo)-[:Shared_Connections]->(AnochiliObinna)
+
+CREATE 
+(Clement)-[:Shared_Connections]->(Boyowa),(Clement)-[:Shared_Connections]->(RenanRamos),
+(Clement)-[:Shared_Connections]->(RohanTallapally),(Clement)-[:Shared_Connections]->(Sufyan)
+
+CREATE 
+(JenniferAigbugwili)-[:Shared_Connections]->(Vinicius),(JenniferAigbugwili)-[:Shared_Connections]->(Boyowa),
+(JenniferAigbugwili)-[:Shared_Connections]->(Clement),(JenniferAigbugwili)-[:Shared_Connections]->(RohanTallapally),
+(JenniferAigbugwili)-[:Shared_Connections]->(Sufyan),(JenniferAigbugwili)-[:Shared_Connections]->(RenanRamos),
+(JenniferAigbugwili)-[:Shared_Connections]->(SaiSubhankar),(JenniferAigbugwili)-[:Shared_Connections]->(Ajulo)
+
+CREATE 
+(Chioma)-[:Shared_Connections]->(Gemma),(Chioma)-[:Shared_Connections]->(Chitralekha),
+(Chioma)-[:Shared_Connections]->(AnochiliObinna)
+
+CREATE 
+(Joanne)-[:Shared_Connections]->(Nsikak),(Joanne)-[:Shared_Connections]->(BlessingOmoruyi),
+(Joanne)-[:Shared_Connections]->(Gemma), (Joanne)-[:Shared_Connections]->(TUS)
+
+CREATE 
+(Gemma)-[:Shared_Connections]->(Chioma),(Gemma)-[:Shared_Connections]->(Joanne),
+(Gemma)-[:Shared_Connections]->(TUS)
+
+CREATE
+(TUS)-[:Shared_Connections]->(EricOnobhayedo),(TUS)-[:Shared_Connections]->(FrancesOranu),
+(TUS)-[:Shared_Connections]->(Clement),(TUS)-[:Shared_Connections]->(BlessingOmoruyi),
+(TUS)-[:Shared_Connections]->(Joanne),(TUS)-[:Shared_Connections]->(Gemma),
+(TUS)-[:Shared_Connections]->(Ajulo)
+
+// Connections from Undergraduate 
+CREATE
+(Experience)-[:Shared_Connections]->(Babatunde),(Experience)-[:Shared_Connections]->(GeorgeAdoghe),
+(Experience)-[:Shared_Connections]->(OsariemenTina),(Experience)-[:Shared_Connections]->(FrankOgbeide)
+
+CREATE
+(OsariemenTina)-[:Shared_Connections]->(Babatunde),(OsariemenTina)-[:Shared_Connections]->(PaulaAjayi),
+(OsariemenTina)-[:Shared_Connections]->(EstherChinonso),(OsariemenTina)-[:Shared_Connections]->(VictorMekwunye),
+(OsariemenTina)-[:Shared_Connections]->(NosakhareUgiagbe),(OsariemenTina)-[:Shared_Connections]->(Jessie),
+(OsariemenTina)-[:Shared_Connections]->(ObasiFrancis),(OsariemenTina)-[:Shared_Connections]->(Opeyemi),
+(OsariemenTina)-[:Shared_Connections]->(Aaron),(OsariemenTina)-[:Shared_Connections]->(Experience),
+(OsariemenTina)-[:Shared_Connections]->(IfeanyiOlabode), (OsariemenTina)-[:Shared_Connections]->(GeorgeAdoghe)
+
+CREATE
+(GeorgeAdoghe)-[:Shared_Connections]->(DaisyOsamede),(GeorgeAdoghe)-[:Shared_Connections]->(JerryAvura),
+(GeorgeAdoghe)-[:Shared_Connections]->(OsariemenTina),(GeorgeAdoghe)-[:Shared_Connections]->(FrankOgbeide),
+(GeorgeAdoghe)-[:Shared_Connections]->(PaulaAjayi),(GeorgeAdoghe)-[:Shared_Connections]->(VictorMekwunye),
+(GeorgeAdoghe)-[:Shared_Connections]->(ObasiFrancis),(GeorgeAdoghe)-[:Shared_Connections]->(IfeanyiOlabode),
+(GeorgeAdoghe)-[:Shared_Connections]->(LouiseOKane),(GeorgeAdoghe)-[:Shared_Connections]->(Experience)
+
+// Other Connections which include recuiters and Data analyts professionals 
+CREATE
+(SarahDavies)-[:Shared_Connections]->(DonnachaRyan),(SarahDavies)-[:Shared_Connections]->(Cormac),
+(SarahDavies)-[:Shared_Connections]->(Kartik),(SarahDavies)-[:Shared_Connections]->(Carolina),
+(SarahDavies)-[:Shared_Connections]->(Jay),(SarahDavies)-[:Shared_Connections]->(JerryAvura),
+(SarahDavies)-[:Shared_Connections]->(Mark),(SarahDavies)-[:Shared_Connections]->(ViktoriiaBorysenko),
+(SarahDavies)-[:Shared_Connections]->(Derek),(SarahDavies)-[:Shared_Connections]->(Valerijan),
+(SarahDavies)-[:Shared_Connections]->(Chienwei),(SarahDavies)-[:Shared_Connections]->(SaiSubhankar),
+(SarahDavies)-[:Shared_Connections]->(Svetlana)
+
+CREATE
+(Valerijan)-[:Shared_Connections]->(SarahDavies),(Valerijan)-[:Shared_Connections]->(Rory),
+(Valerijan)-[:Shared_Connections]->(Digant),(Valerijan)-[:Shared_Connections]->(Wayne),
+(Valerijan)-[:Shared_Connections]->(Chienwei),(Valerijan)-[:Shared_Connections]->(ShanePercival)
+
+CREATE
+(Christopher)-[:Shared_Connections]->(Rory),(Christopher)-[:Shared_Connections]->(Pinkal),
+(Christopher)-[:Shared_Connections]->(Cormac),(Christopher)-[:Shared_Connections]->(Digant),
+(Christopher)-[:Shared_Connections]->(MichaelWalsh),(Christopher)-[:Shared_Connections]->(JerryAvura),
+(Christopher)-[:Shared_Connections]->(Ciara),(Christopher)-[:Shared_Connections]->(Mark),
+(Christopher)-[:Shared_Connections]->(SaiSubhankar)
+
+CREATE
+(Jay)-[:Shared_Connections]->(SarahDavies),(Jay)-[:Shared_Connections]->(Rory),
+(Jay)-[:Shared_Connections]->(DonnachaRyan),(Jay)-[:Shared_Connections]->(Darren),
+(Jay)-[:Shared_Connections]->(RebeccaLedden),(Jay)-[:Shared_Connections]->(BrendanBracken),
+(Jay)-[:Shared_Connections]->(Ciara),(Jay)-[:Shared_Connections]->(Kara),
+(Jay)-[:Shared_Connections]->(Suhani),(Jay)-[:Shared_Connections]->(EllaSludds),
+(Jay)-[:Shared_Connections]->(Wayne),(Jay)-[:Shared_Connections]->(ViktoriiaBorysenko),
+(Jay)-[:Shared_Connections]->(LornaMooney),(Jay)-[:Shared_Connections]->(Valerijan),
+(Jay)-[:Shared_Connections]->(Derek),(Jay)-[:Shared_Connections]->(Chienwei),
+(Jay)-[:Shared_Connections]->(JasonNorval),(Jay)-[:Shared_Connections]->(ShanePercival),
+(Jay)-[:Shared_Connections]->(Chitralekha),(Jay)-[:Shared_Connections]->(JovanniNielsen),
+(Jay)-[:Shared_Connections]->(Svetlana)
+
+
+CREATE
+(Rory)-[:Shared_Connections]->(Christopher),(Rory)-[:Shared_Connections]->(Jay),
+(Rory)-[:Shared_Connections]->(Shreesh),(Rory)-[:Shared_Connections]->(Valerijan),
+(Rory)-[:Shared_Connections]->(Svetlana),(Rory)-[:Shared_Connections]->(SaiSubhankar)
+
+
+CREATE
+(DonnachaRyan)-[:Shared_Connections]->(SarahDavies),(DonnachaRyan)-[:Shared_Connections]->(Cormac),
+(DonnachaRyan)-[:Shared_Connections]->(Jay),(DonnachaRyan)-[:Shared_Connections]->(Chienwei),
+(DonnachaRyan)-[:Shared_Connections]->(Ajulo)
+
+CREATE
+(SarahMcCartan)-[:Shared_Connections]->(MichaelWalsh),(SarahMcCartan)-[:Shared_Connections]->(Wayne),
+(SarahMcCartan)-[:Shared_Connections]->(Chitralekha)
+
+
+CREATE
+(Darren)-[:Shared_Connections]->(Christopher),(Darren)-[:Shared_Connections]->(Bayo),
+(Darren)-[:Shared_Connections]->(Jay),(Darren)-[:Shared_Connections]->(ViktoriiaBorysenko),
+(Darren)-[:Shared_Connections]->(Wayne),(Darren)-[:Shared_Connections]->(Derek),
+(Darren)-[:Shared_Connections]->(LouiseOKane)
+
+
+CREATE
+(Wayne)-[:Shared_Connections]->(SarahMcCartan),(Wayne)-[:Shared_Connections]->(Darren),
+(Wayne)-[:Shared_Connections]->(Bayo),(Wayne)-[:Shared_Connections]->(Digant),
+(Wayne)-[:Shared_Connections]->(Fadeel),(Wayne)-[:Shared_Connections]->(Sodiq),
+(Wayne)-[:Shared_Connections]->(Carolina),(Wayne)-[:Shared_Connections]->(Jay),
+(Wayne)-[:Shared_Connections]->(MichaelWalsh),(Wayne)-[:Shared_Connections]->(Ava),
+(Wayne)-[:Shared_Connections]->(Suhani),(Wayne)-[:Shared_Connections]->(Ciara),
+(Wayne)-[:Shared_Connections]->(Laoise),(Wayne)-[:Shared_Connections]->(Sufyan),
+(Wayne)-[:Shared_Connections]->(Valerijan),(Wayne)-[:Shared_Connections]->(DanielStoica)
+
+CREATE
+(IvanGleasure)-[:Shared_Connections]->(Jay),(IvanGleasure)-[:Shared_Connections]->(Kartik),
+(IvanGleasure)-[:Shared_Connections]->(Suhani),(IvanGleasure)-[:Shared_Connections]->(CaraVolkheimer),
+(IvanGleasure)-[:Shared_Connections]->(Elis),(IvanGleasure)-[:Shared_Connections]->(Gonzalo)
+
+CREATE
+(BrendanBracken)-[:Shared_Connections]->(Jay),(BrendanBracken)-[:Shared_Connections]->(Ava),
+(BrendanBracken)-[:Shared_Connections]->(Suhani),(BrendanBracken)-[:Shared_Connections]->(VineetRana)
+
+CREATE
+(Ava)-[:Shared_Connections]->(BrendanBracken),(Ava)-[:Shared_Connections]->(Laoise),
+(Ava)-[:Shared_Connections]->(Wayne),(Ava)-[:Shared_Connections]->(Chienwei)
+
+CREATE
+(Kara)-[:Shared_Connections]->(Jay),(Kara)-[:Shared_Connections]->(Gonzalo),
+(Kara)-[:Shared_Connections]->(Priyanka)

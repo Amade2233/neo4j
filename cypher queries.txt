@@ -1,0 +1,106 @@
+//QUERIES
+
+MATCH (n) RETURN n LIMIT 200
+
+1) RETURN THE TYPE OF RELATIONSHIP, FIRST NAME AND POSITION THAT EXIST WITH THE SELECTED NODES
+//USING THE IN CLAUSE 
+
+match (a)-[r]->(b)
+where a.First_Name IN [" Wayne","Osariemen Tina ","Vinicius "]
+RETURN a.First_Name, type(r),b.First_Name,b.Position
+
+2) USING THE UNION IN CONNECTING LABELS TO SHOW RELEVANT OUTPUT
+//OR USING THE UNION
+match (n:PostGrad_Connections)
+where  n.First_Name Contains "Vinicius " 
+return n
+Union
+match(n:UnderGrad_Connections)
+where n.First_Name Contains  "Tina "
+return n
+
+// This query will out the current/previous position and company of the people I met doing my postgraduate and undergraduate degree
+match (n:PostGrad_Connections)
+return n.First_Name AS Name,n.Position AS Position,n.Company AS Company,"Technological University of the Shannon" as`University`
+Union
+match(n:UnderGrad_Connections)
+return n.First_Name AS Name,n.Position AS Position,n.Company AS Company, "University Of Benin" as`University`
+
+3) WHAT ARE THE FIRST NAME OF RECRUITERS, COMPANY WHERE THEY WORK AND POSITION PRESENT IN THE OTHER CONNECTION LABEL
+//contains  where
+Match (n:Other_Connections)
+where n.Position Contains "Recruit" 
+    return n.First_Name, n.Company, n.Position
+
+4) USING NEGATION TO SHOW NON- RECRUITERS
+
+//Negation
+Match (n:Other_Connections)
+where not n.Position Contains  "Recruit" 
+    return n.First_Name, n.Company, n.Position
+
+5) RETURN NODES THAT BEGIN WITH r
+//Case insensitive regular expression
+match (n)
+where n.First_Name =~ "(?i)r[a-z]+"
+return n.First_Name
+order by n.First_Name asc
+
+6) return all nodes with "en" present in their first name 
+match (n)
+where n.First_Name =~ ".*(en)$"
+return n.First_Name
+order by n.First_Name asc
+
+7)
+//Filter On Pattern with Properties
+match (n:PostGrad_Connections)
+where(n)-[:Shared_Connections]-({First_Name:"Vinicius "})
+return n.First_Name,n.Position
+
+8)
+//To know the type of connection 
+MATCH(a)-[r]->(b)
+WHERE a.First_Name =  " Clement"
+RETURN  a.First_Name, type(r), b.First_Name
+
+9)
+//To Know the people I made connection with on a particular date 
+match(p:UnderGrad_Connections)-[r]->()
+where r.Connected_on=  " 27-02-2022" or r.Connected_on= " 29-03-2022"
+    return p
+
+//
+match(p:PostGrad_Connections)-[r]->()
+where r.Connected_on=  " 27-02-2022" or r.Connected_on=" 26-02-2022"
+    return p
+
+//
+match(n:PostGrad_Connections)
+where n.Connected_Year = 2022 Or n.Connected_Year > 2022 or n.Connected_Year <2022
+return n.First_Name, n.Connected_Year
+order by n.Connected_Year ASC
+
+10) 
+//adding new labels as friends for Boyowa, Jennifer and Experience 
+match (n)
+where n.First_Name ="Boyowa " or n.First_Name=" Jennifer" or n.First_Name= " Experience"
+set n:Friends
+return n
+
+11)
+//To return nodes of people I met in a University
+MATCH(`These are the people I connected with at TUS`:PostGrad_Connections)-[:Shared_Connections]->(m)
+return distinct (`These are the people I connected with at TUS`)
+
+12)
+//Using the with Clause
+match (n:UnderGrad_Connections)
+with n
+order by n.Connected_Year
+return collect(n.First_Name) as Names
+
+
+// delete all nodes and relationships
+MATCH (n) DETACH DELETE n;
+MATCH (n) DELETE n;
